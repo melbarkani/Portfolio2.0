@@ -923,10 +923,20 @@ section {
   
 /* Contact Section */
 .contact {
-  max-width: 600px;
-  text-align: center;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.contact .numbered-headingg::before {
+.content {
+  text-align: center;
+  max-width: 600px;
+
+}
+.contact .numbered-heading::before {
   content: "0" "4" ".";
 }
 .overline {
@@ -967,39 +977,7 @@ section {
   cursor: pointer;
   transition: var(--transition);
 }
-@media screen and (max-width: 1500px) {
-  .contact {
-    margin: 0;
-    width: 100%;
-  }
-  .content {
-    padding: 0;
-    position: relative;
-    left: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 600px;
-  }
-  .contact .email-link {
-    width: 150px;
-  }
-}
-@media screen and (max-width: 915px) {
-  .contact {
-    display: flex;
-    justify-content: center;
-  }
-  .content {
-    padding: 0;
-    position: relative;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 90%;
-  }
-}
+
 
 
 /* Footer */
