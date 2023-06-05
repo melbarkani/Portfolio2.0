@@ -952,9 +952,10 @@ section {
   transform: translateX(-50%);
 }
 .content {
+  position: relative;
   text-align: center;
+  left: 0;
   max-width: 600px;
-
 }
 .contact .numbered-heading::before {
   content: "0" "4" ".";
@@ -1000,7 +1001,25 @@ section {
 .contact .email-link:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
-
+@media screen and (max-width: 1400px) {
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .contact .numbered-headingg {
+    width: 100%;
+  }
+  .contact .title {
+    
+    width: 100%;
+  }
+}
 
 
 /* Footer */
