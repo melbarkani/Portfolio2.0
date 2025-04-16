@@ -58,7 +58,7 @@ html {
   width: 100%;
   height: 100vh;
   background-color: var(--dark-navy);
-  color: var(--slate);
+  color: var(--lightest-slate);
   justify-content: center;
   align-items: center;
   font-family: 'Acrom-Bold';
@@ -69,8 +69,8 @@ html {
 
 /* Body */
 body {
-  background-color: var(--navy);
-  color: var(--slate);
+  background-color: white;
+  color: var(--dark-navy);
   line-height: 1.3;
   font-family: var(--acrom-font);
 }
@@ -95,7 +95,7 @@ header {
   width: 100%;
   height: 100px;
   z-index: 100;
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: white;
   backdrop-filter: blur(10px);
   transition: var(--transition);
   filter: none !important;
@@ -113,7 +113,7 @@ nav {
   justify-content: space-between;
   position: relative;
   width: 100%;
-  color: var(--lightest-slate);
+  color: var(--dark-navy);
   counter-reset: item 0;
 }
 /* Logo */
@@ -232,12 +232,12 @@ ol {
 .hamburger span {
   width: 100%;
   height: 3px;
-  background-color: var(--lightest-slate);
+  background-color: var(--dark-navy);
   transition: background-color 0.6s ease-in-out;
 }
 
 .nav-open .hamburger span {
-  background-color: var(--lightest-slate);
+  background-color: var(--dark-navy);
 }
 
 /* Animation du hamburger lorsque le menu est ouvert */
@@ -319,7 +319,7 @@ ol {
   left: 50px;
   right: auto;
   z-index: 10;
-  color: var(--light-slate);
+  color: var(--dark-navy);
 }
 ul {
   display: block;
@@ -345,7 +345,7 @@ ul {
   width: 1px;
   height: 90px;
   margin: 0px auto;
-  background-color: var(--lightest-slate);
+  background-color: var(--dark-navy);
 }
 .icon li:last-of-type {
   margin-bottom: 20px;
@@ -365,7 +365,7 @@ li {
 }
 .icon li a {
   padding: 15px;
-  color: var(--lightest-slate);
+  color: var(--dark-navy);
   font-size: 20px;
 }
 .icon li a:hover {
@@ -400,7 +400,7 @@ li {
   writing-mode: vertical-rl;
   color: var(--light-slate);
   text-decoration: none;
-  color: var(--lightest-slate);
+  color: var(--dark-navy);
 }
 .mail a:hover {
   color: var(--red);
@@ -413,7 +413,7 @@ li {
   width: 1px;
   height: 90px;
   margin: 0px auto;
-  background-color: var(--lightest-slate);
+  background-color: var(--dark-navy);
 }
 @media screen and (max-width: 1070px) {
   .mail-link {
@@ -449,6 +449,7 @@ section {
   display: flex;
   height: auto;
   padding-top: 250px;
+  color: var(--light-navy);
 }
 .presentation h1 {
   margin: 20px 0px 10px 5px;
@@ -459,13 +460,13 @@ section {
 .presentation h2 {
   margin: 0px 0px 10px;
   font-weight: 800;
-  color: var(--lightest-slate);
+  color: var(--dark-navy);
   line-height: 1.1;
   font-size: clamp(45px, 6vw, 85px);
 }
 .presentation h3 {
   margin-top: 5px;
-  color: var(--slate);
+  color: var(--light-navy);
   line-height: 0.9;
   font-family: var(--font-sans);
   font-weight: 900;
@@ -820,7 +821,7 @@ section {
 }
 .card .project-title a {
   text-decoration: none;
-  color: var(--lightest-slate);
+  color: var(--dark-navy);
   font-size: clamp(24px, 5vw, 28px);
 }
 .card .project-description {
@@ -874,7 +875,7 @@ section {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  color: var(--lightest-slate);
+  color: var(--dark-navy);
 }
 .card .project-image {
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
